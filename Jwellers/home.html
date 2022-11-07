@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <!-- Navigation -->
+        <div class="sidenav">
+            <a href="#">Dashboard</a>
+            <button class="dropdown-btn">Accounts</button>
+            <div class="dropdown-container">
+              <a href="#">Create Ledger</a>
+              <a href="#">List Of Accounts</a>
+            </div>
+            <button class="dropdown-btn">Party Ledger</button>
+            <div class="dropdown-container">
+              <a href="#">Customer</a>
+              <a href="#">Supplier</a>
+            </div>
+            <button class="dropdown-btn">Job Order</button>
+            <div class="dropdown-container">
+              <a href="#">Job order Form</a>
+              <a href="#">job order list</a>
+            </div>
+            <button class="dropdown-btn">New Sale Order</button>
+            <div class="dropdown-container">
+              <a href="#">Sales Order Form</a>
+              <a href="#">Sales Order List</a>
+            </div>
+            <button class="dropdown-btn">Jewel Repair</button>
+            <div class="dropdown-container">
+              <a href="#">Jewel Repair Form</a>
+              <a href="#">Jewel Repair list</a>
+            </div>
+            <button class="dropdown-btn">Refinery</button>
+            <div class="dropdown-container">
+              <a href="#">Refinery Issue</a>
+              <a href="#">Refinery Receipt</a>
+            </div>
+            <button class="dropdown-btn">Purchase</button>
+            <div class="dropdown-container">
+              <a href="#">Purchase Form</a>
+              <a href="#">Purchase List</a>
+            </div>
+            <button class="dropdown-btn">Items</button>
+            <div class="dropdown-container">
+              <a href="#">Metal Summary List</a>
+              <a href="#">Item Creation</a>
+            </div>
+            <button class="dropdown-btn">Sales</button>
+            <div class="dropdown-container">
+              <a href="#">Sales Form</a>
+              <a href="#">Sales list</a>
+              <a href="#">Sales Return List</a>
+            </div>
+            <button class="dropdown-btn">Journal</button>
+            <div class="dropdown-container">
+              <a href="#">Journal List</a>
+              <a href="#">New journal</a>
+            </div>
+            <a href="#">Report</a>
+          </div> 
+          <!-- Content -->
+        <div class="text-box">
+            <h1>Bansilal Jwellers</h1>
+
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/cart.webp" alt="">
+                        <h2>Sales Form</h2>
+                    </a>
+                </div>
+            </Div>
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/purchase form.jpg" alt="">
+                        <h2>Purchase Form</h2>
+                    </a>
+                </div>
+            </Div>
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/sales order.webp" alt="">
+                        <h2>Sale Order Form</h2>
+                    </a>
+                </div>
+            </Div>
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/Accounts.webp" alt="">
+                        <h2>Accounts</h2>
+                    </a>
+                </div>
+            </Div>
+
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/customers.webp" alt="">
+                        <h2>Customers</h2>
+                    </a>
+                </div>
+            </Div>
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/supplier.webp" alt="">
+                        <h2>Suppliers</h2>
+                    </a>
+                </div>
+            </Div>
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/Setting.webp" alt="">
+                        <h2>Settings</h2>
+                    </a>
+                </div>
+            </div>
+            <Div class="dashboard">
+                <div class="content">
+                    <a href="">
+                        <img src="./img/reports.webp" alt="">
+                        <h2>Reports</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- script -->
+    <script>
+       var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+        });
+        } 
+    </script>
+</body>
+
+</html>
